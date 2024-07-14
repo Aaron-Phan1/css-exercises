@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 img {
@@ -24,3 +28,49 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 12px;
+}
+
+.footer {
+  background-color: whitesmoke;
+}
+
+.content {
+  align-self: center;
+  text-align: center; 
+}
+
+.buttons, 
+.input {
+  margin-top: 16px;
+}
+
+.buttons > * {
+  padding: 6px 12px;
+  font-weight: 600;
+  color: black;
+}
+
+/* Differences between solution.css and mine:
+- The content doesn't use display: flex and instead uses text-align to center
+- space-between is used to center the content in the middle of the page
+  rather than flex: 1 */
